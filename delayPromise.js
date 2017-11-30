@@ -1,8 +1,9 @@
 "use strict";
 
-function delayPromise(delay) {
+// add a specified millisecond delay to a promise chain
+function delayPromise(milliseconds) {
     return new Promise((resolve, reject) => {
-        setTimeout(resolve, delay);
+        setTimeout(resolve, milliseconds);
     });
 }
 
