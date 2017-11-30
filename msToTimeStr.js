@@ -1,5 +1,7 @@
 "use strict";
 
+// convert milliseconds to the string format of HH:MM:SS.NNN
+// or more specifically hours:minutes:seconds.milliseconds
 function msToTimeStr(milliseconds) {
     if (!milliseconds) {
         milliseconds = (new Date).getTime();
